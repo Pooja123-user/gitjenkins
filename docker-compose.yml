@@ -1,0 +1,18 @@
+version: "3"
+
+services:
+  spring-docker-container:
+    image: docker-spring-docker-compose:1
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    volumes:
+      - /data/spring-docker-container
+    ports:
+     - "8080:8081"
+
+
+
+
+
+
